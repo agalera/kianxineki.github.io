@@ -1,0 +1,53 @@
+Alberto Galera
+2013-02-28T08:51:00Z
+31
+6
+Alberto Galera
+2013-02-28T08:51:00Z
+https://github.com/kianxineki
+2015-11-02T11:11:42Z
+https://avatars.githubusercontent.com/u/3725538?v=3
+Spain
+galerajimenez@gmail.com
+    <a href="https://github.com/kianxineki">Alberto Galera</a>
+    None
+    <p>========
+Cassilda
+========</p>
+<hr />
+<h2>an UML/QEMU/XEN image generator, runner and testing framework</h2>
+<h2>Installation and usage</h2>
+<p>Download
+~~~~~~~~
+Get last version from github:.</p>
+<p>git clone git://github.com/odkq/Cassilda.git</p>
+<p>Requirements
+~~~~~~~~~~~~
+<em> Python 2.6+             http://www.python.org
+</em> netaddr 0.7.4+          https://github.com/drkjam/netaddr
+<em> pexpect 2.3+            http://www.noah.org/wiki/pexpect
+</em> uml-utilities 20070815+ http://user-mode-linux.sourceforge.net/downloads.html
+<em> bridge-utils            http://www.linuxfoundation.org/collaborate/workgroups/networking/bridge
+</em> kvm                     http://www.linux-kvm.org/page/Main_Page
+<em> debootstrap 1.0.26+     http://wiki.debian.org/Debootstrap
+</em> apt-cacher-ng           http://www.unix-ag.uni-kl.de/~bloch/acng/
+* python-paramiko         http://www.lag.net/paramiko/ </p>
+<p>To install all dependencies in Debian Wheezy (7.0), do::</p>
+<p>apt-get install python python-netaddr python-pexpect \
+  uml-utilities bridge-utils debootstrap apt-cacher-ng qemu-kvm \
+  python-paramiko</p>
+<p>Installation
+~~~~~~~~~~~~</p>
+<p>Cassilda uses the regular distutils setup.py, install with::</p>
+<p>sudo python ./setup.py install</p>
+<p>It will put the cassilda python modules wherever your system-wide
+python installation needs it, and the documentation/examples in
+/usr/share/doc/Cassilda</p>
+<p>Usage
+~~~~~</p>
+<p>Cassilda is a library, you use it's API to build your own tools.
+In lieu of documentation, you can see an example in
+examples/base.py</p>
+<p>After installing cassilda, run it as root and a kvm debian image
+will be built and run.</p>
+footer
