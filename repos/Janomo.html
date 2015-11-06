@@ -1,15 +1,130 @@
-Alberto Galera
-2013-02-28T08:51:00Z
-31
-6
-Alberto Galera
-2013-02-28T08:51:00Z
-https://github.com/kianxineki
-2015-11-02T11:11:42Z
-https://avatars.githubusercontent.com/u/3725538?v=3
-Spain
-galerajimenez@gmail.com
-    <a href="https://github.com/kianxineki">Alberto Galera</a>
-    None
-    not exist readme
-footer
+<html>
+    <head>
+        <!-- load css -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="avatar_url">
+                <img src="https://avatars.githubusercontent.com/u/3725538?v=3" width="100%"/>
+            </div>
+            <div id="header_text">
+                <h1><div id="name">Alberto Galera</div></h1>
+                GitHub: <a href="https://github.com/kianxineki">https://github.com/kianxineki</a><br />
+                Public Repos: 30<br />
+                Public Gists: 6<br />
+                From: Spain<br />
+                Email: galerajimenez@gmail.com
+            </div>
+        </div>
+    <div id="body">
+    <a href="https://github.com/kianxineki/Janomo">Janomo</a><br />
+    High performance framework for modular web application development<br />
+    <h1>Janomo</h1>
+<p>High performance framework for modular web application development</p>
+<h2>README Contents</h2>
+<ul>
+<li><a href="#a1">Features</a></li>
+<li><a href="#a2">Implementation</a></li>
+<li><a href="#a3">Installation</a></li>
+<li><a href="#a4">Skeleton</a></li>
+<li><a href="#a5">Views</a></li>
+<li><a href="#a6">Modules</a></li>
+<li><a href="#a7">Comunnication events</a></li>
+<li><a href="#a8">Internationalization</a></li>
+<li><a href="#a9">License</a></li>
+</ul>
+<p><a name="a1"/></p>
+<h2>Features</h2>
+<ul>
+<li>Only HTML + CSS + Javascript knowledge nedded</li>
+<li>Extreamily fast results</li>
+<li>Easy to use</li>
+<li>Powerfull. No templates or hard structures</li>
+<li>Modular code, encapsulation, reuse</li>
+<li>Event based comunication system between modules</li>
+<li>Internationalization support</li>
+</ul>
+<p><a name="a2"/></p>
+<h2>Implementation</h2>
+<ul>
+<li>The Janomo core is 'janomo.js' library wich implements the module initialization, the event comunication system and the transalation routines.</li>
+<li>If you run Janomo under Node.JS you may also need 'main.js' that implements a basic http server with include support based on php include directive.</li>
+<li>Further more, you should maintain some easy code conventions that you can see in the example view and modules implementation.</li>
+</ul>
+<p><a name="a3"/></p>
+<h2>Instalation</h2>
+<p>Janomo can be executed under any http server with php support like Apache. Just copy the files under root server directory.
+Then, just go to the main view url. For example:
+<code>url
+http://localhost/janomo/views/main/view.php</code>
+Janomo can be executed under NodeJs. Just run 'node main.js' to start the server.
+Then, just go to the main view url. For example:
+<code>url
+http://localhost:8080/views/main/view.php</code>
+<a name="a4"/></p>
+<h2>Skeleton</h2>
+<ul>
+<li>/views =&gt; Directory of views. Every view is contained in one directory under here.</li>
+<li>/modules =&gt; Directory of modules. Every module is contained in onde directory under here</li>
+<li>/public =&gt; All other stuff and common resources.</li>
+</ul>
+<p><a name="a5"/></p>
+<h2>Views</h2>
+<p>Every view is a complete html page but with .php extension. In this file you have to include this basic libraries:
+<code>html
+&lt;script type="text/javascript" src="../../public/libs/jquery-1.7.2.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="../../public/libs/janomo.js"&gt;&lt;/script&gt;</code>
+In addition you should include all view files like:
+<code>html
+&lt;script type="text/javascript" src="script.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="language_en.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="language_es.js"&gt;&lt;/script&gt;
+&lt;link rel="stylesheet" type="text/css" href="style.css"&gt;</code>
+Finally you should include all required files by included modules (see example). Every module is included with this code:
+<code>html
+&lt;div class="janomoModule" name="writer" id="writer1"&gt;
+  &lt;?php include '../../modules/writer/view.html'; ?&gt;
+&lt;/div&gt;</code>
+The php directive 'include' is also implemented when running under Node.Js.
+Every module has to be included under a div with class 'janomoModule', with name attribute equal to the name of the module and one unique identificator. Note that you can include several modules of the same type but the identificator has to be unique.</p>
+<p>It is higly recommended to follow the file conventions used in the example. So I suggest you to see the other files of the view in order to have a full perpective of a view implementation</p>
+<p><a name="a6"/></p>
+<h2>Modules</h2>
+<p>Every module has one html file with the html code to be included in the view wich include de module.</p>
+<p>In addition you have the same files of a view:
+- Language files
+- Js file
+- Css file</p>
+<p>The best way to get how this files works is to see the example included in the code. It is higly recommended to follow the file conventions used in the example.</p>
+<p><a name="a7"/></p>
+<h2>Communication events</h2>
+<p>The best way to get how comunications events works is to see the writer and reader example modules included in the code.</p>
+<p><a name="a8"/></p>
+<h2>Internationalization</h2>
+<p>The best way to get how internationalization works is to see the example included in the code.</p>
+<p><a name="a9"/></p>
+<h2>License</h2>
+<p>(The MIT License)</p>
+<p>Author: Germán Ramos García &lt;german.ramos@gmail.com&gt;</p>
+<p>Copyright (c) 2012 GreenBox Software S.L. (Spain) </p>
+<p>Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p><br />
+    <br />
+    </div>
+    <div id="footer">By <a href="https://github.com/kianxineki">kianxineki</a></div>
+</body>

@@ -1,15 +1,50 @@
-Alberto Galera
-2013-02-28T08:51:00Z
-31
-6
-Alberto Galera
-2013-02-28T08:51:00Z
-https://github.com/kianxineki
-2015-11-02T11:11:42Z
-https://avatars.githubusercontent.com/u/3725538?v=3
-Spain
-galerajimenez@gmail.com
-    <a href="https://github.com/kianxineki">Alberto Galera</a>
-    None
-    not exist readme
-footer
+<html>
+    <head>
+        <!-- load css -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="avatar_url">
+                <img src="https://avatars.githubusercontent.com/u/3725538?v=3" width="100%"/>
+            </div>
+            <div id="header_text">
+                <h1><div id="name">Alberto Galera</div></h1>
+                GitHub: <a href="https://github.com/kianxineki">https://github.com/kianxineki</a><br />
+                Public Repos: 30<br />
+                Public Gists: 6<br />
+                From: Spain<br />
+                Email: galerajimenez@gmail.com
+            </div>
+        </div>
+    <div id="body">
+    <a href="https://github.com/kianxineki/markdown_server">markdown_server</a><br />
+    server to display your markdowns in html<br />
+    <h1>Markdown server</h1>
+<h2>SUMMARY</h2>
+<p>This is a simple server, all you have in the "files" folder serves it via web</p>
+<h2>REQUIREMENTS</h2>
+<ul>
+<li>python 2.7</li>
+<li>gunicorn</li>
+<li>gevent</li>
+<li>markdown</li>
+</ul>
+<h2>RUN</h2>
+<p>host, port, workers, debug
+<code>sh
+python server.py '0.0.0.0' 1111 4 False</code>
+or
+<code>sh
+gunicorn -w 3 -k gevent server:app -b 0.0.0.0:1111</code></p>
+<h2>TODO'S</h2>
+<ul>
+<li>Config file</li>
+<li>Improve argv</li>
+<li>Use templates to also allow customized css</li>
+<li>build with PyInstaller</li>
+</ul><br />
+    <br />
+    </div>
+    <div id="footer">By <a href="https://github.com/kianxineki">kianxineki</a></div>
+</body>

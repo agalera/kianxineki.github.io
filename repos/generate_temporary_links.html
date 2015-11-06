@@ -1,15 +1,45 @@
-Alberto Galera
-2013-02-28T08:51:00Z
-31
-6
-Alberto Galera
-2013-02-28T08:51:00Z
-https://github.com/kianxineki
-2015-11-02T11:11:42Z
-https://avatars.githubusercontent.com/u/3725538?v=3
-Spain
-galerajimenez@gmail.com
-    <a href="https://github.com/kianxineki">Alberto Galera</a>
-    None
-    not exist readme
-footer
+<html>
+    <head>
+        <!-- load css -->
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body>
+        <div id="header">
+            <div id="avatar_url">
+                <img src="https://avatars.githubusercontent.com/u/3725538?v=3" width="100%"/>
+            </div>
+            <div id="header_text">
+                <h1><div id="name">Alberto Galera</div></h1>
+                GitHub: <a href="https://github.com/kianxineki">https://github.com/kianxineki</a><br />
+                Public Repos: 30<br />
+                Public Gists: 6<br />
+                From: Spain<br />
+                Email: galerajimenez@gmail.com
+            </div>
+        </div>
+    <div id="body">
+    <a href="https://github.com/kianxineki/generate_temporary_links">generate_temporary_links</a><br />
+    example of how to create temporary links to our sites download<br />
+    <p>General:</p>
+<p>Debug mode:
+python server.py</p>
+<p>Prod mode:
+gunicorn -w 3 -k gevent server:app -b 127.0.0.1:1234</p>
+<p>I left a configuration file if you want to use with supervisord.</p>
+<p>Memcache version:</p>
+<p>Generates a temporary id to pass it to the customer and you can download the file</p>
+<p>Example url:
+http://example.com/file_id/82578172d136400ca28b0ad20b2c175d</p>
+<p>Redis version:</p>
+<p>Generates a permanent id to pass it to the customer and you can download the file</p>
+<p>Example url:
+http://example.com/file_id/82578172d136400ca28b0ad20b2c175d</p>
+<p>Basic version:</p>
+<p>This application is an example to create permanent links to files that are not typically have access, and serve them through another server, for example, nginx.</p>
+<p>Passing a relative path, create a folder with random name and a symbolic link within the file, so you have a url like this:
+http://example.com/82578172d136400ca28b0ad20b2c175d/pepito.jpg</p>
+<p>It would be advisable to have a system cron erasing the old links (I will add more later)</p><br />
+    <br />
+    </div>
+    <div id="footer">By <a href="https://github.com/kianxineki">kianxineki</a></div>
+</body>
